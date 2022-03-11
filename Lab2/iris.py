@@ -72,10 +72,6 @@ def plot_scatter(values, labels, folder):
                 plt.savefig(folder+'/scatter_%d_%d.pdf' % (index_1, index_2))
         plt.show()
 
-def compute_mean(values):
-    return values.mean(1)
-
-
 if __name__ == '__main__':
     f = open("iris.csv", "r")
     (values, labels) = load(f)
