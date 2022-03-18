@@ -5,9 +5,6 @@ import matplotlib.pyplot as plt
 def vcol(v):
     return v.reshape((v.size, 1))
 
-def vrow(v):
-    return v.reshape((1, v.size))
-
 #Get dataset
 def load_data():
     return sklearn.datasets.load_iris()['data'].T, sklearn.datasets.load_iris()['target']
