@@ -1,4 +1,3 @@
-from re import A
 import numpy
 import sklearn.datasets
 #import matplotlib.pyplot as plt
@@ -149,7 +148,7 @@ if __name__ == '__main__':
     #alg can be: 'mult', 'naive', 'tied-cov', 'tied-naive'
     alg = 'tied-naive'
     k = 150
-    data, label = kfold(D,L,k) 
+    data, label = kfold(D,L,k) #split D and L in k parts, sequence them in k iterations of k-1 training parts + 1 test part
 
     err_tot = 0.0
 
